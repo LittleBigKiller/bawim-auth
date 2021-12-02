@@ -73,6 +73,7 @@ Mamy podany login ofiary oraz poprawne dane logowania na istniejące konto w cel
 
 Tym razem witryna aktywnie broni się przed atakiem, warto zacząć od zbadania ochrony.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab2-Hints.md#lab-21---zepsuta-ochrona-przed-brute-force-i-blokada-ip)
 
 <br/>
 
@@ -84,6 +85,7 @@ Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach (
 
 System obrony z poprzedniego labu już nie jest problemem. Teraz użytkownicy muszą uważać na zbyt częste wpisywanie błędnych haseł.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-account-lock)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab2-Hints.md#lab-22---username-enumeration-przez-blokady-kont)
 
 <br/><br/>
 
