@@ -6,18 +6,23 @@
 <details>
   <summary>Drobna podpowiedź</summary>
   <ol>
-    <li> Burp Intruder będzie bardzo przydatny w tym laboratorium. </li>
-    <li> Pracuj sprytnie, darmowa wersja Burpa w zupełności wystarczy. </li>
+    <li>
+      Burp Intruder będzie bardzo przydatny w tym laboratorium, darmowa wersja Burpa w zupełności wystarczy.
+    </li>
+    <li>
+      
+    </li>
   </ol>
 </details>
 
 <details>
   <summary>Duża podpowiedź</summary>
   <ol>
-    <li> Kluczem w tym laboratorium jest przyjżenie się uważnie odpowiedziom na zapytanie <code>POST /login</code>. </li>
     <li>
-      Nie pracuj z dwoma listami na raz. Najpierw skorzystaj z <a href=https://portswigger.net/web-security/authentication/auth-lab-usernames>listy użytkowników</a>.
-      Próbuj łamać hasło dopiero jak się dowiesz czyje dokładnie!
+      Kluczem w tym laboratorium jest przyjżenie się uważnie odpowiedziom na zapytanie <code>POST /login</code>. 
+    </li>
+    <li>
+      Próbuj łamać hasło dopiero jak poznasz poprawną nazwę użytkownika.
     </li>
   </ol>
 </details>
@@ -75,10 +80,10 @@
   <summary>Duża podpowiedź</summary>
   <ol>
     <li>
-      Burp Intruder ma wbudowane wyciąganie danych z odpowiedzi przy użyciu polecenia <b>Grep</b>. Można je znaleźć o zakładce "Options" danego ataku.
+      Burp Intruder ma wbudowane wyciąganie danych z odpowiedzi przy użyciu polecenia <b>Grep</b>. Można je znaleźć w zakładce "Options" danego ataku.
       Wyciągnięcie odpowiednich danych z odpowiedzi powinno szybko uświadomić nam, które jest inne od reszty.
     </li>
-    <li> Głupio tracić bezpieczeństwo systemu przez błędy interpunkcyjne </li>
+    <li> Bezpieczenstwo systemu nie powinno tracic na swej jakosci z powodu bledow interpunkcyjnych </li>
   </ol>
 </details>
 
@@ -130,8 +135,8 @@
   <summary>Drobna podpowiedź</summary>
   <ol>
     <li> Warto rozważyć inne tryby Burp Intrudera niż "Sniper". </li>
-    <li> Jak tam ze znajomością nagłówków HTTP? </li>
-    <li> Przyjżyj się uważnie czasom odpowiedzi serwera. </li>
+    <li> Znajomość nagłówków HTTP może okazać się bardzo przydatna. </li>
+    <li> Przyjrzyj się uważnie czasom odpowiedzi serwera. </li>
   </ol>
 </details>
 
