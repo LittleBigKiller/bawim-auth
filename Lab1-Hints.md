@@ -12,7 +12,7 @@
 <details>
   <summary>Duża podpowiedź</summary>
   <ol>
-    <li> Kluczem w tym laboratorium jest przyjżenie się uważnie odpowiedziom na zapytanie <code>POST /login</code> </li>.
+    <li> Kluczem w tym laboratorium jest przyjżenie się uważnie odpowiedziom na zapytanie <code>POST /login</code>. </li>
     <li>
       Nie pracuj z dwoma listami na raz. Najpierw skorzystaj z <a href=https://portswigger.net/web-security/authentication/auth-lab-usernames>listy użytkowników</a>.
       Próbuj łamać hasło dopiero jak się dowiesz czyje dokładnie!
