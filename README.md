@@ -81,7 +81,7 @@ Mamy dostęp do konta testowego i konta ofiary:
 - Login ofiary: `carlos`, Hasło ofiary: `montoya`
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
-Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierzytelnianie. Niestety znajomość hasła ofiary może nie być wystarczająca...
+Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierzytelnianie. Niestety znajomość hasła ofiary może nie być wystarczająca.
 - [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-simple-bypass)
 
 
@@ -106,6 +106,26 @@ Znamy login i hasło konta ofiary:
 
 ---
 
-## 4. Dwuskładnikowe Uwierzytelnianie
-Laboratoria w tej sekcji skupiają się na omijaniu wadliwego dwuskładnikowego uwierzytelniania.
+## 4. Wadliwe resetowanie haseł
+Laboratoria w tej sekcji skupiają się na nadużywaniu wadliwie zaimplementowanych systemów resetowania haseł.
 
+
+### Lab 4.1 - Wadliwa logika resetowania haseł
+Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
+Mamy dostęp do konta testowego i loginu konta ofiary:
+- Twój login: `wiener`, Twoje hasło: `peter`
+- Login ofiary: `carlos`
+
+Tym razem przyglądamy się mechanizmowi resetowania hasła na witrynie. Zapewne i tym razem nie jest napisany zbyt dobrze.
+- [Laboratorium](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic)
+
+
+### Lab 4.2 - Brute-force hasła przez system zmiany hasła
+Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
+Mamy dostęp do konta testowego i loginu konta ofiary oraz listy prawdopodobnych haseł:
+- Twój login: `wiener`, Twoje hasło: `peter`
+- Login ofiary: `carlos`
+- [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+Witryna ponownie daje nam *zdecydowanie za dużo informacji*.
+- [Laboratorium](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-brute-force-via-password-change)
