@@ -108,6 +108,7 @@ Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce
 
 Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierzytelnianie. Niestety znajomość hasła ofiary może nie być wystarczająca.
 - [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-simple-bypass)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab3-Hints.md#lab-31---proste-omini%C4%99cie-dwusk%C5%82adnikowego-uwierzytelniania)
 
 <br/>
 
@@ -121,6 +122,7 @@ Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce
 
 2FA tym razem działa, ale z dużym błędem w logice. Ofiara nawet nie będzie musiała próbować się zalogować.
 - [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-broken-logic)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab3-Hints.md#lab-32---wadliwa-logika-dwusk%C5%82adnikowego-uwierzytelniania)
 
 <br/><br/>
 
