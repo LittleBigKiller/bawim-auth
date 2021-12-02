@@ -5,7 +5,7 @@ Przed rozpoczęciem pracy z laboratoriami należy zarejestrować się i zalogowa
 
 ---
 
-## 1. Uwierzytelnianie hasłem
+## 1. Uwierzytelnianie hasłem {#lab1}
 Laboratoria w tej sekcji skupiają się na omijaniu zabezpieczeń opartych na haśle.
 
 
@@ -43,7 +43,7 @@ Tym razem witryna nie ma oczywistego błędu, ale pamiętaj! Ciepliwość jest c
 
 ---
 
-## 2. Rate limit i blokada konta
+## 2. Rate limit i blokada konta {#lab2}
 Laboratoria w tej sekcji skupiają się na omijaniu wadliwej ochrony przed brute-force oraz nadużywaniu blokowania kont.
 
 
@@ -70,7 +70,7 @@ System obrony z poprzedniego labu już nie jest problemem. Teraz użytkownicy mu
 
 ---
 
-## 3. Dwuskładnikowe Uwierzytelnianie
+## 3. Dwuskładnikowe Uwierzytelnianie {#lab3}
 Laboratoria w tej sekcji skupiają się na omijaniu wadliwego dwuskładnikowego uwierzytelniania.
 
 
@@ -106,7 +106,7 @@ Znamy login i hasło konta ofiary:
 
 ---
 
-## 4. Wadliwe resetowanie haseł
+## 4. Wadliwe resetowanie haseł {#lab4}
 Laboratoria w tej sekcji skupiają się na nadużywaniu wadliwie zaimplementowanych systemów resetowania haseł.
 
 
