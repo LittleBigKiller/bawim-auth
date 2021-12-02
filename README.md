@@ -144,8 +144,10 @@ Laboratoria w tej sekcji skupiają się na nadużywaniu wadliwie zaimplementowan
 ### Lab 4.1 - Wadliwa logika resetowania haseł
 Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
 Mamy dostęp do konta testowego i loginu konta ofiary:
-- Twój login: `wiener`, Twoje hasło: `peter`
+- Twój login: `wiener`
+- Twoje hasło: `peter`
 - Login ofiary: `carlos`
+Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania linków resetu hasła.
 
 Tym razem przyglądamy się mechanizmowi resetowania hasła na witrynie. Zapewne i tym razem nie jest napisany zbyt dobrze.
 - [Laboratorium](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic)
@@ -155,9 +157,11 @@ Tym razem przyglądamy się mechanizmowi resetowania hasła na witrynie. Zapewne
 ### Lab 4.2 - Brute-force hasła przez system zmiany hasła
 Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
 Mamy dostęp do konta testowego i loginu konta ofiary oraz listy prawdopodobnych haseł:
-- Twój login: `wiener`, Twoje hasło: `peter`
+- Twój login: `wiener`
+- Twoje hasło: `peter`
 - Login ofiary: `carlos`
 - [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
 Witryna ponownie daje nam *zdecydowanie za dużo informacji*.
 - [Laboratorium](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-brute-force-via-password-change)
