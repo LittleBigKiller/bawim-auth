@@ -104,6 +104,7 @@ Mamy dostęp do konta testowego i konta ofiary:
 - Twoje hasło: `peter`
 - Login ofiary: `carlos`
 - Hasło ofiary: `montoya`
+
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
 Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierzytelnianie. Niestety znajomość hasła ofiary może nie być wystarczająca.
@@ -118,6 +119,7 @@ Mamy dostęp do konta testowego i znamy login konta ofiary:
 - Twój login: `wiener`
 - Twoje hasło: `peter`
 - Login ofiary: `carlos`
+
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
 2FA tym razem działa, ale z dużym błędem w logice. Ofiara nawet nie będzie musiała próbować się zalogować.
@@ -139,6 +141,7 @@ Mamy dostęp do konta testowego i loginu konta ofiary:
 - Twój login: `wiener`
 - Twoje hasło: `peter`
 - Login ofiary: `carlos`
+
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania linków resetu hasła.
 
 Tym razem przyglądamy się mechanizmowi resetowania hasła na witrynie. Zapewne i tym razem nie jest napisany zbyt dobrze.
@@ -153,6 +156,7 @@ Mamy dostęp do konta testowego i loginu konta ofiary oraz listy prawdopodobnych
 - Twoje hasło: `peter`
 - Login ofiary: `carlos`
 - [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
 Witryna ponownie daje nam *zdecydowanie za dużo informacji*.
