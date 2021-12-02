@@ -1,5 +1,7 @@
 # Identification and Authentication Failures - Podpowiedzi do laboratoriów
 
+<br/>
+
 ## Lab 1.1 - Username enumeration przez różne odpowiedzi
 <details>
   <summary>Drobna podpowiedź</summary>
