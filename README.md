@@ -4,6 +4,8 @@
 
 Przed rozpoczęciem pracy z laboratoriami należy zarejestrować się i zalogować w serwisie [Portswigger](https://portswigger.net/).
 
+Do każdego zestawu labów dołączony jest zestaw podpowiedzi. Są one 3 stopniowe - drobne, duże i rozwiązanie krok po kroku. Odnośniki do nich dostępne są obok linków do labu.
+
 <br/><br/>
 
 ---
@@ -22,6 +24,7 @@ Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach:
 
 Witryna daje *zdecydowanie za dużo informacji* użytkownikom i atakującemu.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab1-Hints.md#lab-11---username-enumeration-przez-r%C3%B3%C5%BCne-odpowiedzi)
 
 <br/>
 
@@ -34,6 +37,7 @@ Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach (
 
 Tym razem witryna nie daje zbyt dużej ilości informacji, niestety w kod wkradł się błąd.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-subtly-different-responses)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab1-Hints.md#lab-11---username-enumeration-przez-r%C3%B3%C5%BCne-odpowiedzi)
 
 <br/>
 
@@ -46,6 +50,7 @@ W Tym laboratorium musimy się zrobić nieco bardziej kreatywni, mamy podane pop
 
 Tym razem witryna nie ma oczywistego błędu, ale pamiętaj! Cierpliwość jest cnotą.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-response-timing)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab1-Hints.md#lab-13---username-enumeration-przez-r%C3%B3%C5%BCnice-czasu-odpowiedzi)
 
 <br/><br/>
 
