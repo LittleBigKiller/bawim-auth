@@ -67,7 +67,8 @@ Laboratoria w tej sekcji skupiają się na omijaniu wadliwej ochrony przed ataka
 Zadanie - Zalogować się na podane konto użytkownika, a następnie wejść na podstronę konta.
 W Tym laboratorium zadanie jest nieco inne, już nie przejmujemy się username enumeration.
 Mamy podany login ofiary oraz poprawne dane logowania na istniejące konto w celu łatwiejszego testowania systemu.
-- Twój login: `wiener`, Twoje hasło: `peter`
+- Twój login: `wiener`
+- Twoje hasło: `peter`
 - Login ofiary: `carlos`
 - [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
@@ -120,17 +121,6 @@ Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce
 
 2FA tym razem działa, ale z dużym błędem w logice. Ofiara nawet nie będzie musiała próbować się zalogować.
 - [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-broken-logic)
-
-<br/>
-
-### Lab 3.3 - Atak brute-force na dwuskładnikowe uwierzytelnianie
-Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
-Znamy login i hasło konta ofiary:
-- Login ofiary: `carlos`
-- Hasło ofiary: `montoya`
-
-2FA tym razem dobrze działa. Nie ma jednak żadnych dodatkowych zabezpieczeń. Cztero-cyfrowe kody nie są bardzo odporne na brute-force.
-- [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-bypass-using-a-brute-force-attack)
 
 <br/><br/>
 
