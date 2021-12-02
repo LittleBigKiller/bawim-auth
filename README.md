@@ -3,13 +3,14 @@
 ## 0. Przed rozpoczęciem
 Przed rozpoczęciem pracy z laboratoriami należy zarejestrować się i zalogować w serwisie [Portswigger](https://portswigger.net/).
 
+---
 
-## 1. Password-based login
+## 1. Uwierzytelnianie hasłem
 Laboratoria w tej sekcji skupiają się na omijaniu zabezpieczeń opartych na haśle.
 
 
 ### Lab 1.1 - Username enumeration przez różne odpowiedzi
-Zadanie - skutecznie stwierdzić, które konto użytkownika istnieje i zalogować się na nie, a następnie wejść na podstronę konta.
+Zadanie - Skutecznie stwierdzić, które konto użytkownika istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
 To laboratorium jest podatne na `username enumeration` i atak `brute-force` na hasła.
 Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach:
 - [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
@@ -20,7 +21,7 @@ Witryna daje *zdecydowanie za dużo informacji* użytkownikom i atakującemu.
 
 
 ### Lab 1.2 - Username enumeration przez subtelnie różne odpowiedzi
-Zadanie - skutecznie stwierdzić, które konto użytkownika istnieje i zalogować się na nie, a następnie wejść na podstronę konta.
+Zadanie - Skutecznie stwierdzić, które konto użytkownika istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
 To laboratorium jest podatne na `username enumeration` i atak `brute-force` na hasła.
 Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach (identyczne jak w Lab 1.1):
 - [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
@@ -31,17 +32,80 @@ Tym razem witryna nie daje zbyt dużej ilości informacji, niestety w kod wkrad�
 
 
 ### Lab 1.3 - Username enumeration przez różnice czasu odpowiedzi
-Zadanie - skutecznie stwierdzić, które konto użytkownika (poza podanym) istnieje i zalogować się na nie, a następnie wejść na podstronę konta.
+Zadanie - Skutecznie stwierdzić, które konto użytkownika (poza podanym) istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
 W Tym laboratorium musimy się zrobić nieco bardziej kreatywni, mamy podane poprawne dane logowania na jedno konto w celu łatwiejszego testowania systemu.
-- Username: `wiener`, Password: `peter`
+- Twój login: `wiener`, Twoje hasło: `peter`
 - [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
 - [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
-Tym razem witryna nie ma oczywistego błędu, proces logowania ma jednak dość zróżnicowane czasy odpowiedzi.
+Tym razem witryna nie ma oczywistego błędu, ale pamiętaj! Ciepliwość jest cnotą.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-response-timing)
 
 ---
 
+## 2. Rate limit i blokada konta
+Laboratoria w tej sekcji skupiają się na omijaniu wadliwej ochrony przed brute-force oraz nadużywaniu blokowania kont.
 
-## 2. Password-based login
-Laboratoria w tej sekcji skupiają się na omijaniu zabezpieczeń opartych na haśle.
+
+### Lab 2.1 - Zepsuta ochrona przed brute-force i blokada IP
+Zadanie - Zalogować się na podane konto użytkownika, a następnie wejść na podstronę konta.
+W Tym laboratorium zadanie jest nieco inne, już nie przejmujemy się username enumeration.
+Mamy podany login ofiary oraz poprawne dane logowania na istniejące konto w celu łatwiejszego testowania systemu.
+- Twój login: `wiener`, Twoje hasło: `peter`
+- Login ofiary: `carlos`
+- [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+Tym razem witryna ma aktywnie broni się przed atakiem, warto zacząć od zbadania ochrony.
+- [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block)
+
+
+### Lab 2.2 - Username enumeration przez blokady kont
+Zadanie - Skutecznie stwierdzić, które konto użytkownika istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
+Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach (identyczne jak w poprzednich labach):
+- [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+- [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+System obrony z poprzedniego labu już nie jest problemem. Teraz użytkownicy muszą uważać na zbyt częste wpisywanie błędnych haseł.
+- [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-account-lock)
+
+---
+
+## 3. Dwuskładnikowe Uwierzytelnianie
+Laboratoria w tej sekcji skupiają się na omijaniu wadliwego dwuskładnikowego uwierzytelniania.
+
+
+### Lab 3.1 - Proste ominięcie dwuskładnikowego uwierzytelniania
+Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
+Mamy dostęp do konta testowego i konta ofiary:
+- Twój login: `wiener`, Twoje hasło: `peter`
+- Login ofiary: `carlos`, Hasło ofiary: `montoya`
+Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
+
+Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierzytelnianie. Niestety znajomość hasła ofiary może nie być wystarczająca...
+- [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-simple-bypass)
+
+
+### Lab 3.2 - Wadliwa logika dwuskładnikowego uwierzytelniania
+Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
+Mamy dostęp do konta testowego i znamy login konta ofiary:
+- Twój login: `wiener`, Twoje hasło: `peter`
+- Login ofiary: `carlos`
+Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
+
+2FA tym razem działa, ale z dużym błędem w logice. Ofiara nawet nie będzie musiała próbować się zalogować.
+- [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-broken-logic)
+
+
+### Lab 3.3 - Atak brute-force na dwuskładnikowe uwierzytelnianie
+Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
+Znamy login i hasło konta ofiary:
+- Login ofiary: `carlos`, Hasło ofiary: `montoya`
+
+2FA tym razem naprawde dobrze działa. Nie ma jednak żadnych dodatkowych zabezpieczeń. Cztero-cyfrowe kody nie są bardzo odporne na brute-force.
+- [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-bypass-using-a-brute-force-attack)
+
+---
+
+## 4. Dwuskładnikowe Uwierzytelnianie
+Laboratoria w tej sekcji skupiają się na omijaniu wadliwego dwuskładnikowego uwierzytelniania.
+
