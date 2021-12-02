@@ -31,7 +31,27 @@
   <summary>Krok po kroku</summary>
   <ol>
     <li>
-      PLACEHOLDER
+      Z włączonym w tle Burpem, kliknij odnośnik "Forgot your password?" i wpisz swoją nazwę użytkownika.
+    </li>
+    <li>
+      Naciśnij przycisk "Email client", żeby zobaczyć, że został przysłany link zmiany hasła.
+      Kliknij w link i zmień swoje hasło na dowolne.
+    </li>
+    <li>
+      W Burpie, wejdź w "Proxy" > "HTTP history" i przestudiować zapytania i odpowiedzi w poszukiwaniu resetu hasła.
+      Zaobserwuj, że token resetowania jest podawany jako parametr URL.
+    </li>
+    <li>
+      Z włączonym w tle Burpem, kliknij odnośnik "Forgot your password?" i wpisz swoją nazwę użytkownika.
+    </li>
+    <li>
+      Z włączonym w tle Burpem, kliknij odnośnik "Forgot your password?" i wpisz swoją nazwę użytkownika.
+    </li>
+    <li>
+      Z włączonym w tle Burpem, kliknij odnośnik "Forgot your password?" i wpisz swoją nazwę użytkownika.
+    </li>
+    <li>
+      Z włączonym w tle Burpem, kliknij odnośnik "Forgot your password?" i wpisz swoją nazwę użytkownika.
     </li>
   </ol>
 </details>
