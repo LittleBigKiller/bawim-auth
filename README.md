@@ -4,7 +4,7 @@
 
 Przed rozpoczęciem pracy z laboratoriami należy zarejestrować się i zalogować w serwisie [Portswigger](https://portswigger.net/).
 
-Do każdego zestawu labów dołączony jest zestaw podpowiedzi. Są one 3 stopniowe - drobne, duże i rozwiązanie krok po kroku. Odnośniki do nich dostępne są obok linków do labu.
+Do każdego zestawu labów dołączony jest zestaw podpowiedzi. Są one 3 stopniowe - drobne, duże i rozwiązanie krok po kroku. Odnośniki do nich dostępne są poniżej linków do labu.
 
 <br/><br/>
 
