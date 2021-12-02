@@ -141,7 +141,12 @@
       Stwórz zasadę Grep, która wyodrębni nam wiadomość o błędzie. Rozpocznij atak.
     </li>
     <li>
-      TEMP
+      W rezultatach ataku, popatrz na kolumnę wyników Grepa. Zauważ, że jest tam kilka różnych wiadomości o błędach, ale jedna z odpowiedzi nie zawiera żadnej.
+      Zanotuj związane z nią hasło.
+    </li>
+    <li>
+      Poczekaj minutę, żeby pozwolić blokadzie konta na zresetowanie.
+      Zaloguj się przy użyciu zidentyfikowanych nazwy użytkownika i hasła i wejdź na podstronę konta użytkownika w celu rozwiązania laboratorium.
     </li>
   </ol>
 </details>
