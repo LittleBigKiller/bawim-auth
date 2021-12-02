@@ -59,7 +59,7 @@ Tym razem witryna nie ma oczywistego błędu, ale pamiętaj! Cierpliwość jest 
 ---
 
 ## 2. Rate limit i blokada konta
-Laboratoria w tej sekcji skupiają się na omijaniu wadliwej ochrony przed brute-force oraz nadużywaniu blokowania kont.
+Laboratoria w tej sekcji skupiają się na omijaniu wadliwej ochrony przed atakami typu brute-force oraz nadużywaniu blokowania kont w celu ataku.
 
 <br/>
 
@@ -71,7 +71,7 @@ Mamy podany login ofiary oraz poprawne dane logowania na istniejące konto w cel
 - Login ofiary: `carlos`
 - [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
-Tym razem witryna ma aktywnie broni się przed atakiem, warto zacząć od zbadania ochrony.
+Tym razem witryna aktywnie broni się przed atakiem, warto zacząć od zbadania ochrony.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block)
 
 <br/>
@@ -97,8 +97,10 @@ Laboratoria w tej sekcji skupiają się na omijaniu wadliwego dwuskładnikowego 
 ### Lab 3.1 - Proste ominięcie dwuskładnikowego uwierzytelniania
 Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
 Mamy dostęp do konta testowego i konta ofiary:
-- Twój login: `wiener`, Twoje hasło: `peter`
-- Login ofiary: `carlos`, Hasło ofiary: `montoya`
+- Twój login: `wiener`
+- Twoje hasło: `peter`
+- Login ofiary: `carlos`
+- Hasło ofiary: `montoya`
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
 Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierzytelnianie. Niestety znajomość hasła ofiary może nie być wystarczająca.
@@ -109,7 +111,8 @@ Witryna stała się bezpieczniejsza, teraz wykorzystuje wieloskładnikowe uwierz
 ### Lab 3.2 - Wadliwa logika dwuskładnikowego uwierzytelniania
 Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
 Mamy dostęp do konta testowego i znamy login konta ofiary:
-- Twój login: `wiener`, Twoje hasło: `peter`
+- Twój login: `wiener`
+- Twoje hasło: `peter`
 - Login ofiary: `carlos`
 Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce "Email client". Jest ono używane do otrzymywania kodów 2FA.
 
@@ -121,9 +124,10 @@ Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce
 ### Lab 3.3 - Atak brute-force na dwuskładnikowe uwierzytelnianie
 Zadanie - Zalogować się na konto ofiary, a następnie wejść na podstronę konta.
 Znamy login i hasło konta ofiary:
-- Login ofiary: `carlos`, Hasło ofiary: `montoya`
+- Login ofiary: `carlos`
+- Hasło ofiary: `montoya`
 
-2FA tym razem naprawde dobrze działa. Nie ma jednak żadnych dodatkowych zabezpieczeń. Cztero-cyfrowe kody nie są bardzo odporne na brute-force.
+2FA tym razem dobrze działa. Nie ma jednak żadnych dodatkowych zabezpieczeń. Cztero-cyfrowe kody nie są bardzo odporne na brute-force.
 - [Laboratorium](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-bypass-using-a-brute-force-attack)
 
 <br/><br/>
