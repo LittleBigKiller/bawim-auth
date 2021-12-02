@@ -1,5 +1,7 @@
 # Identification and Authentication Failures - Laboratoria
 
+<br/>
+
 ## 0. Przed rozpoczęciem
 
 Przed rozpoczęciem pracy z laboratoriami należy zarejestrować się i zalogować w serwisie [Portswigger](https://portswigger.net/).
