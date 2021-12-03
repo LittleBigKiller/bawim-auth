@@ -46,7 +46,8 @@ Tym razem witryna nie daje zbyt dużej ilości informacji, niestety w kod wkrad�
 ### Lab 1.3 - Username enumeration przez różnice czasu odpowiedzi
 Zadanie - Skutecznie stwierdzić, które konto użytkownika (poza podanym) istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
 W Tym laboratorium musimy się zrobić nieco bardziej kreatywni, mamy podane poprawne dane logowania na jedno konto w celu łatwiejszego testowania systemu.
-- Twój login: `wiener`, Twoje hasło: `peter`
+- Twój login: `wiener`
+- Twoje hasło: `peter`
 - [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
 - [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
