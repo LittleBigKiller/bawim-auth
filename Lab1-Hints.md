@@ -9,9 +9,6 @@
     <li>
       Burp Intruder będzie bardzo przydatny w tym laboratorium, darmowa wersja Burpa w zupełności wystarczy.
     </li>
-    <li>
-      
-    </li>
   </ol>
 </details>
 
