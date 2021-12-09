@@ -147,6 +147,7 @@ Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce
 
 Tym razem przyglądamy się mechanizmowi resetowania hasła na witrynie. Zapewne i tym razem nie jest napisany zbyt dobrze.
 - [Laboratorium](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab4-Hints.md#lab-41---wadliwa-logika-resetowania-hase%C5%82)
 
 <br/>
 
@@ -162,3 +163,4 @@ Dodatkowo mamy dostęp do konta email powiązanego z kontem testowym w zakładce
 
 Witryna ponownie daje nam *zdecydowanie za dużo informacji*.
 - [Laboratorium](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-brute-force-via-password-change)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab4-Hints.md#lab-42---brute-force-has%C5%82a-przez-system-zmiany-has%C5%82a)
