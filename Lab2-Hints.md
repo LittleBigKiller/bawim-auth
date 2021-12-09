@@ -2,66 +2,7 @@
 
 <br/>
 
-## Lab 2.1 - Zepsuta ochrona przed brute-force i blokada IP
-<details>
-  <summary>Drobna podpowiedź</summary>
-  <ol>
-    <li>
-      Zacznij pracę od zbadania zabezpeczeń przed atakami brute-force. Ominięcie ich to priorytet.
-    </li>
-  </ol>
-</details>
-
-<details>
-  <summary>Duża podpowiedź</summary>
-  <ol>
-    <li>
-       Licznik niepoprawnych logowań nie jest dla konta, jest dla adresu IP.
-    </li>
-    <li>
-      Ponownie przydatny będzie tryb ataku "Pitchfork".
-    </li>
-    <li>
-      Blokada IP tym razem nie jest wrażliwa na <code>X-Forwarded-For</code>.
-    </li>
-  </ol>
-</details>
-
-<details>
-  <summary>Krok po kroku</summary>
-  <ol>
-    <li>
-      Z włączonym w tle Burpem zbadaj stronę logowania. Zauważ, że po trzech nieudanych próbach logowania z rzędu, Twoje IP zostanie zablokowane,
-      ale zwróć również uwagę, że skuteczne zalogowanie się resetuje licznik błędnych logowań.
-    </li>
-    <li>
-      Wstaw błędną nazwę użytkownia i hasło, prześlij zapytanie <code>POST /login</code> do Burp Intrudera. Stwórz atak pitchfork z pozycjami payloadu
-      zarówno w parametrze <code>username</code> jak i <code>password</code>.
-    </li>
-    <li>
-      W zakładce "Payloads" wybierz payload set 1. Dodaj listę payloadów, która zmiennie używa Twojej nazwy użytkownika i <code>carlos</code>.
-      Upewnij się, że Twoja nazwa użytkownika jest pierwsza oraz że <code>carlos</code> powtarza się przynajmniej 100 razy.
-    </li>
-    <li>
-      Edytuj <a href=https://portswigger.net/web-security/authentication/auth-lab-passwords>listę potencjalnych haseł</a> i wstaw swoje hasło przed każdym.
-      Upewnij się, że pozycje Twojego hasła pokrywają się z Twoją nazwą użytkownika na liście nazw użytkownika.
-    </li>
-    <li>
-      Dodaj powyżej opisaną listę jako payload set 2 i rozpocznij atak.
-    </li>
-    <li>
-      Kiedy atak zakończy się, ukryj odpowiedzi o kodzie statusu 200. Pozortuj pozostałe odpowiedzi według pola username.
-      Powinna być dokładnie jedna odpowiedź z kodem 302 dla zapytań z nazwą użytkownika <code>carlos</code>. Zanotuj hasło w kolumnie "Payload 2" tego zapytania.
-    </li>
-    <li>
-      Zaloguj się na konto Carlos'a przy użyciu zidentyfikowanego hasła i wejdź na podstronę konta użytkownika w celu rozwiązania laboratorium.
-    </li>
-  </ol>
-</details>
-
-<br/>
-
-## Lab 2.2 - Username enumeration przez blokady kont
+## Lab 2.1 - Username enumeration przez blokady kont
 <details>
   <summary>Drobna podpowiedź</summary>
   <ol>
@@ -147,6 +88,65 @@
     <li>
       Poczekaj minutę, żeby pozwolić blokadzie konta na zresetowanie.
       Zaloguj się przy użyciu zidentyfikowanych nazwy użytkownika i hasła i wejdź na podstronę konta użytkownika w celu rozwiązania laboratorium.
+    </li>
+  </ol>
+</details>
+
+<br/>
+
+## Lab 2.2 - Zepsuta ochrona przed brute-force i blokada IP
+<details>
+  <summary>Drobna podpowiedź</summary>
+  <ol>
+    <li>
+      Zacznij pracę od zbadania zabezpeczeń przed atakami brute-force. Ominięcie ich to priorytet.
+    </li>
+  </ol>
+</details>
+
+<details>
+  <summary>Duża podpowiedź</summary>
+  <ol>
+    <li>
+       Licznik niepoprawnych logowań nie jest dla konta, jest dla adresu IP.
+    </li>
+    <li>
+      Ponownie przydatny będzie tryb ataku "Pitchfork".
+    </li>
+    <li>
+      Blokada IP tym razem nie jest wrażliwa na <code>X-Forwarded-For</code>.
+    </li>
+  </ol>
+</details>
+
+<details>
+  <summary>Krok po kroku</summary>
+  <ol>
+    <li>
+      Z włączonym w tle Burpem zbadaj stronę logowania. Zauważ, że po trzech nieudanych próbach logowania z rzędu, Twoje IP zostanie zablokowane,
+      ale zwróć również uwagę, że skuteczne zalogowanie się resetuje licznik błędnych logowań.
+    </li>
+    <li>
+      Wstaw błędną nazwę użytkownia i hasło, prześlij zapytanie <code>POST /login</code> do Burp Intrudera. Stwórz atak pitchfork z pozycjami payloadu
+      zarówno w parametrze <code>username</code> jak i <code>password</code>.
+    </li>
+    <li>
+      W zakładce "Payloads" wybierz payload set 1. Dodaj listę payloadów, która zmiennie używa Twojej nazwy użytkownika i <code>carlos</code>.
+      Upewnij się, że Twoja nazwa użytkownika jest pierwsza oraz że <code>carlos</code> powtarza się przynajmniej 100 razy.
+    </li>
+    <li>
+      Edytuj <a href=https://portswigger.net/web-security/authentication/auth-lab-passwords>listę potencjalnych haseł</a> i wstaw swoje hasło przed każdym.
+      Upewnij się, że pozycje Twojego hasła pokrywają się z Twoją nazwą użytkownika na liście nazw użytkownika.
+    </li>
+    <li>
+      Dodaj powyżej opisaną listę jako payload set 2 i rozpocznij atak.
+    </li>
+    <li>
+      Kiedy atak zakończy się, ukryj odpowiedzi o kodzie statusu 200. Pozortuj pozostałe odpowiedzi według pola username.
+      Powinna być dokładnie jedna odpowiedź z kodem 302 dla zapytań z nazwą użytkownika <code>carlos</code>. Zanotuj hasło w kolumnie "Payload 2" tego zapytania.
+    </li>
+    <li>
+      Zaloguj się na konto Carlos'a przy użyciu zidentyfikowanego hasła i wejdź na podstronę konta użytkownika w celu rozwiązania laboratorium.
     </li>
   </ol>
 </details>
