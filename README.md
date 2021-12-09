@@ -43,7 +43,7 @@ Tym razem witryna nie daje zbyt dużej ilości informacji, niestety w kod wkrad�
 
 <br/>
 
-### Lab 1.3 - Username enumeration przez różnice czasu odpowiedzi
+### \*Lab 1.3 - Username enumeration przez różnice czasu odpowiedzi
 Zadanie - Skutecznie stwierdzić, które konto użytkownika (poza podanym) istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
 W Tym laboratorium musimy się zrobić nieco bardziej kreatywni, mamy podane poprawne dane logowania na jedno konto w celu łatwiejszego testowania systemu.
 - Twój login: `wiener`
@@ -64,7 +64,19 @@ Laboratoria w tej sekcji skupiają się na omijaniu wadliwej ochrony przed ataka
 
 <br/>
 
-### Lab 2.1 - Zepsuta ochrona przed brute-force i blokada IP
+### Lab 2.1 - Username enumeration przez blokady kont
+Zadanie - Skutecznie stwierdzić, które konto użytkownika istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
+Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach (identyczne jak w poprzednich labach):
+- [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+- [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+System obrony z poprzedniego labu już nie jest problemem. Teraz użytkownicy muszą uważać na zbyt częste wpisywanie błędnych haseł.
+- [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-account-lock)
+- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab2-Hints.md#lab-22---username-enumeration-przez-blokady-kont)
+
+<br/>
+
+### Lab 2.2 - Zepsuta ochrona przed brute-force i blokada IP
 Zadanie - Zalogować się na podane konto użytkownika, a następnie wejść na podstronę konta.
 W Tym laboratorium zadanie jest nieco inne, już nie przejmujemy się username enumeration.
 Mamy podany login ofiary oraz poprawne dane logowania na istniejące konto w celu łatwiejszego testowania systemu.
@@ -76,18 +88,6 @@ Mamy podany login ofiary oraz poprawne dane logowania na istniejące konto w cel
 Tym razem witryna aktywnie broni się przed atakiem, warto zacząć od zbadania ochrony.
 - [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block)
 - [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab2-Hints.md#lab-21---zepsuta-ochrona-przed-brute-force-i-blokada-ip)
-
-<br/>
-
-### Lab 2.2 - Username enumeration przez blokady kont
-Zadanie - Skutecznie stwierdzić, które konto użytkownika istnieje i złamać jego hasło, a następnie wejść na podstronę konta.
-Zarówno nazwa użytkownika jak i hasło znajdują się na poniższych listach (identyczne jak w poprzednich labach):
-- [Lista użytkowników](https://portswigger.net/web-security/authentication/auth-lab-usernames)
-- [Lista haseł](https://portswigger.net/web-security/authentication/auth-lab-passwords)
-
-System obrony z poprzedniego labu już nie jest problemem. Teraz użytkownicy muszą uważać na zbyt częste wpisywanie błędnych haseł.
-- [Laboratorium](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-account-lock)
-- [Podpowiedzi](https://github.com/LittleBigKiller/bawim-auth/blob/master/Lab2-Hints.md#lab-22---username-enumeration-przez-blokady-kont)
 
 <br/><br/>
 
